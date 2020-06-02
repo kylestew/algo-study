@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../lib/BST.h
+iostream
+-
+
 ../tests/googletest/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
 ../tests/googletest/googletest/include/gtest/gtest/internal/gtest-death-test-internal.h
@@ -318,7 +322,9 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/Users/kylestewart/Projects/algo-study/tests/BinarySearchTreeTests.cpp
+/Users/kylestewart/Projects/algo-study/tests/BSTTests.cpp
+BST.h
+/Users/kylestewart/Projects/algo-study/tests/BST.h
 gtest/gtest.h
 /Users/kylestewart/Projects/algo-study/tests/gtest/gtest.h
 

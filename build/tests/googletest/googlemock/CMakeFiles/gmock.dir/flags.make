@@ -6,5 +6,5 @@ CXX_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/kylestewart/Projects/algo-study/tests/googletest/googlemock/include -I/Users/kylestewart/Projects/algo-study/tests/googletest/googlemock -isystem /Users/kylestewart/Projects/algo-study/tests/googletest/googletest/include -isystem /Users/kylestewart/Projects/algo-study/tests/googletest/googletest 
+CXX_INCLUDES = -I/Users/kylestewart/Projects/algo-study/lib -I/Users/kylestewart/Projects/algo-study/tests/googletest/googlemock/include -I/Users/kylestewart/Projects/algo-study/tests/googletest/googlemock -isystem /Users/kylestewart/Projects/algo-study/tests/googletest/googletest/include -isystem /Users/kylestewart/Projects/algo-study/tests/googletest/googletest 
 

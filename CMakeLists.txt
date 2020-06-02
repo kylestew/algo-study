@@ -4,8 +4,7 @@ project(algo-study C)
 
 set(CMAKE_CXX_STANDARD 14)
 
-#include_directories(lib)
-#add_subdirectory(lib)
-
+include_directories(lib)
+add_subdirectory(lib)
 
 add_subdirectory(tests)

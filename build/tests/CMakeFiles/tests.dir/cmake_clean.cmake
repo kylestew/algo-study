@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.o"
+  "CMakeFiles/tests.dir/BSTTests.cpp.o"
   "tests"
   "tests.pdb"
 )

@@ -177,6 +177,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named algos
+
+# Build rule for target.
+algos: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 algos
+.PHONY : algos
+
+# fast build rule for target.
+algos/fast:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/algos.dir/build.make lib/CMakeFiles/algos.dir/build
+.PHONY : algos/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -253,6 +266,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... algos"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"

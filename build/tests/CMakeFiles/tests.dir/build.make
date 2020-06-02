@@ -77,28 +77,29 @@ include tests/CMakeFiles/tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include tests/CMakeFiles/tests.dir/flags.make
 
-tests/CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.o: tests/CMakeFiles/tests.dir/flags.make
-tests/CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.o: ../tests/BinarySearchTreeTests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylestewart/Projects/algo-study/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.o"
-	cd /Users/kylestewart/Projects/algo-study/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.o -c /Users/kylestewart/Projects/algo-study/tests/BinarySearchTreeTests.cpp
+tests/CMakeFiles/tests.dir/BSTTests.cpp.o: tests/CMakeFiles/tests.dir/flags.make
+tests/CMakeFiles/tests.dir/BSTTests.cpp.o: ../tests/BSTTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylestewart/Projects/algo-study/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/tests.dir/BSTTests.cpp.o"
+	cd /Users/kylestewart/Projects/algo-study/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/BSTTests.cpp.o -c /Users/kylestewart/Projects/algo-study/tests/BSTTests.cpp
 
-tests/CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.i"
-	cd /Users/kylestewart/Projects/algo-study/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylestewart/Projects/algo-study/tests/BinarySearchTreeTests.cpp > CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.i
+tests/CMakeFiles/tests.dir/BSTTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/BSTTests.cpp.i"
+	cd /Users/kylestewart/Projects/algo-study/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylestewart/Projects/algo-study/tests/BSTTests.cpp > CMakeFiles/tests.dir/BSTTests.cpp.i
 
-tests/CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.s"
-	cd /Users/kylestewart/Projects/algo-study/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylestewart/Projects/algo-study/tests/BinarySearchTreeTests.cpp -o CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.s
+tests/CMakeFiles/tests.dir/BSTTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/BSTTests.cpp.s"
+	cd /Users/kylestewart/Projects/algo-study/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylestewart/Projects/algo-study/tests/BSTTests.cpp -o CMakeFiles/tests.dir/BSTTests.cpp.s
 
 # Object files for target tests
 tests_OBJECTS = \
-"CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.o"
+"CMakeFiles/tests.dir/BSTTests.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
-tests/tests: tests/CMakeFiles/tests.dir/BinarySearchTreeTests.cpp.o
+tests/tests: tests/CMakeFiles/tests.dir/BSTTests.cpp.o
 tests/tests: tests/CMakeFiles/tests.dir/build.make
+tests/tests: lib/libalgos.a
 tests/tests: lib/libgtest_main.a
 tests/tests: lib/libgtest.a
 tests/tests: tests/CMakeFiles/tests.dir/link.txt

@@ -88,6 +88,28 @@ install/local/fast: preinstall/fast
 	/usr/local/Cellar/cmake/3.17.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/Cellar/cmake/3.17.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/Cellar/cmake/3.17.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -122,38 +144,16 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.17.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.17.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /Users/kylestewart/Projects/algo-study/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/kylestewart/Projects/algo-study/build/CMakeFiles /Users/kylestewart/Projects/algo-study/build/tests/CMakeFiles/progress.marks
-	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
+	cd /Users/kylestewart/Projects/algo-study/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/kylestewart/Projects/algo-study/build/CMakeFiles /Users/kylestewart/Projects/algo-study/build/lib/CMakeFiles/progress.marks
+	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kylestewart/Projects/algo-study/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -163,12 +163,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -177,46 +177,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/tests.dir/rule:
-	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/tests.dir/rule
-.PHONY : tests/CMakeFiles/tests.dir/rule
+lib/CMakeFiles/algos.dir/rule:
+	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/algos.dir/rule
+.PHONY : lib/CMakeFiles/algos.dir/rule
 
 # Convenience name for target.
-tests: tests/CMakeFiles/tests.dir/rule
+algos: lib/CMakeFiles/algos.dir/rule
 
-.PHONY : tests
+.PHONY : algos
 
 # fast build rule for target.
-tests/fast:
-	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+algos/fast:
+	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/algos.dir/build.make lib/CMakeFiles/algos.dir/build
+.PHONY : algos/fast
 
-BSTTests.o: BSTTests.cpp.o
+BST.o: BST.cpp.o
 
-.PHONY : BSTTests.o
+.PHONY : BST.o
 
 # target to build an object file
-BSTTests.cpp.o:
-	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/BSTTests.cpp.o
-.PHONY : BSTTests.cpp.o
+BST.cpp.o:
+	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/algos.dir/build.make lib/CMakeFiles/algos.dir/BST.cpp.o
+.PHONY : BST.cpp.o
 
-BSTTests.i: BSTTests.cpp.i
+BST.i: BST.cpp.i
 
-.PHONY : BSTTests.i
+.PHONY : BST.i
 
 # target to preprocess a source file
-BSTTests.cpp.i:
-	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/BSTTests.cpp.i
-.PHONY : BSTTests.cpp.i
+BST.cpp.i:
+	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/algos.dir/build.make lib/CMakeFiles/algos.dir/BST.cpp.i
+.PHONY : BST.cpp.i
 
-BSTTests.s: BSTTests.cpp.s
+BST.s: BST.cpp.s
 
-.PHONY : BSTTests.s
+.PHONY : BST.s
 
 # target to generate assembly for a file
-BSTTests.cpp.s:
-	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/BSTTests.cpp.s
-.PHONY : BSTTests.cpp.s
+BST.cpp.s:
+	cd /Users/kylestewart/Projects/algo-study/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/algos.dir/build.make lib/CMakeFiles/algos.dir/BST.cpp.s
+.PHONY : BST.cpp.s
 
 # Help Target
 help:
@@ -230,10 +230,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... tests"
-	@echo "... BSTTests.o"
-	@echo "... BSTTests.i"
-	@echo "... BSTTests.s"
+	@echo "... algos"
+	@echo "... BST.o"
+	@echo "... BST.i"
+	@echo "... BST.s"
 .PHONY : help
 
 
