@@ -1,5 +1,6 @@
+#include <gtest/gtest.h>
+
 #include "BST.h"
-#include "gtest/gtest.h"
 
 TEST(BinarySearchTreeFixture, EmptyTree) {
     BST t;
