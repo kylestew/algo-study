@@ -5,12 +5,16 @@ Personal repo of data structures and algorithms for a refresher and further stud
 
 ## Data Structures
 
-- [ ] Arrays
-- [ ] Linked Lists
+- [x] Arrays
 - [ ] Stacks & Queues
-- [ ] Heaps
+
+- [ ] Linked Lists
 - [ ] Hash Tables
-- [x] Binary Search Tree
+
+- [ ] Trees
+- [ ] Heaps
+- [ ] Binary Search Tree
+
 - [ ] (other trees)
 - [ ] (types of graphs)
 
@@ -32,3 +36,4 @@ Personal repo of data structures and algorithms for a refresher and further stud
 
 - [ ] (A star)[https://www.redblobgames.com/pathfinding/a-star/implementation.html]
 - [ ] Kalman Filter
+- [ ] PID
