@@ -10,6 +10,7 @@
 		FF40570924C8A7AA00C89BBE /* AlgoStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4056FF24C8A7AA00C89BBE /* AlgoStudy.framework */; };
 		FF40570E24C8A7AA00C89BBE /* AlgoStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40570D24C8A7AA00C89BBE /* AlgoStudyTests.swift */; };
 		FF40571024C8A7AA00C89BBE /* AlgoStudy.h in Headers */ = {isa = PBXBuildFile; fileRef = FF40570224C8A7AA00C89BBE /* AlgoStudy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF5DF6B124C90DCF004424EB /* ArraysStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF6B024C90DCF004424EB /* ArraysStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		FF40570824C8A7AA00C89BBE /* AlgoStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgoStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF40570D24C8A7AA00C89BBE /* AlgoStudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoStudyTests.swift; sourceTree = "<group>"; };
 		FF40570F24C8A7AA00C89BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5DF6B024C90DCF004424EB /* ArraysStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				FF40570224C8A7AA00C89BBE /* AlgoStudy.h */,
 				FF40570324C8A7AA00C89BBE /* Info.plist */,
+				FF5DF6B024C90DCF004424EB /* ArraysStrings.swift */,
 			);
 			path = AlgoStudy;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					FF4056FE24C8A7AA00C89BBE = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					FF40570724C8A7AA00C89BBE = {
 						CreatedOnToolsVersion = 11.6;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5DF6B124C90DCF004424EB /* ArraysStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		FF40571424C8A7AA00C89BBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TD4WU76RKW;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.kylestewart.AlgoStudy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		FF40571524C8A7AA00C89BBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TD4WU76RKW;
@@ -388,6 +396,7 @@
 		FF40571724C8A7AA00C89BBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TD4WU76RKW;
 				INFOPLIST_FILE = AlgoStudyTests/Info.plist;
@@ -406,6 +415,7 @@
 		FF40571824C8A7AA00C89BBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TD4WU76RKW;
 				INFOPLIST_FILE = AlgoStudyTests/Info.plist;

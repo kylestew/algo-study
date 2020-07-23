@@ -1,34 +1,21 @@
-//
-//  AlgoStudyTests.swift
-//  AlgoStudyTests
-//
-//  Created by Kyle Stewart on 7/22/20.
-//  Copyright © 2020 Kyle Stewart. All rights reserved.
-//
-
 import XCTest
 @testable import AlgoStudy
 
 class AlgoStudyTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    /*
+     1.1 - Is Unique
+     Implement an algorithm to determine if a string has all unique characters.
+     What if you cannot use additional data structures?
+     [Hints: #44, #117, #132] (pg 192)
+     */
+    func testProblem_1_1() {
+        let allUnique = "abc123"
+        XCTAssertTrue(ArraysStrings.allCharactersUnique(allUnique))
+
+        let notUnique = "abcabc"
+        XCTAssertFalse(ArraysStrings.allCharactersUnique(notUnique))
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }
