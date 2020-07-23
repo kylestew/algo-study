@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FF40570924C8A7AA00C89BBE /* AlgoStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4056FF24C8A7AA00C89BBE /* AlgoStudy.framework */; };
-		FF40570E24C8A7AA00C89BBE /* AlgoStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40570D24C8A7AA00C89BBE /* AlgoStudyTests.swift */; };
+		FF40570E24C8A7AA00C89BBE /* ArraysStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40570D24C8A7AA00C89BBE /* ArraysStrings.swift */; };
 		FF40571024C8A7AA00C89BBE /* AlgoStudy.h in Headers */ = {isa = PBXBuildFile; fileRef = FF40570224C8A7AA00C89BBE /* AlgoStudy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF5DF6B124C90DCF004424EB /* ArraysStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF6B024C90DCF004424EB /* ArraysStrings.swift */; };
+		FF5DF6B324C91202004424EB /* LinkedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF6B224C91202004424EB /* LinkedLists.swift */; };
+		FF5DF6B524C9125F004424EB /* LinkedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF6B424C9125F004424EB /* LinkedLists.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +30,11 @@
 		FF40570224C8A7AA00C89BBE /* AlgoStudy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgoStudy.h; sourceTree = "<group>"; };
 		FF40570324C8A7AA00C89BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF40570824C8A7AA00C89BBE /* AlgoStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgoStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF40570D24C8A7AA00C89BBE /* AlgoStudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoStudyTests.swift; sourceTree = "<group>"; };
+		FF40570D24C8A7AA00C89BBE /* ArraysStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysStrings.swift; sourceTree = "<group>"; };
 		FF40570F24C8A7AA00C89BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF5DF6B024C90DCF004424EB /* ArraysStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysStrings.swift; sourceTree = "<group>"; };
+		FF5DF6B224C91202004424EB /* LinkedLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedLists.swift; sourceTree = "<group>"; };
+		FF5DF6B424C9125F004424EB /* LinkedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedLists.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +77,10 @@
 		FF40570124C8A7AA00C89BBE /* AlgoStudy */ = {
 			isa = PBXGroup;
 			children = (
+				FF5DF6B024C90DCF004424EB /* ArraysStrings.swift */,
+				FF5DF6B424C9125F004424EB /* LinkedLists.swift */,
 				FF40570224C8A7AA00C89BBE /* AlgoStudy.h */,
 				FF40570324C8A7AA00C89BBE /* Info.plist */,
-				FF5DF6B024C90DCF004424EB /* ArraysStrings.swift */,
 			);
 			path = AlgoStudy;
 			sourceTree = "<group>";
@@ -83,7 +88,8 @@
 		FF40570C24C8A7AA00C89BBE /* AlgoStudyTests */ = {
 			isa = PBXGroup;
 			children = (
-				FF40570D24C8A7AA00C89BBE /* AlgoStudyTests.swift */,
+				FF40570D24C8A7AA00C89BBE /* ArraysStrings.swift */,
+				FF5DF6B224C91202004424EB /* LinkedLists.swift */,
 				FF40570F24C8A7AA00C89BBE /* Info.plist */,
 			);
 			path = AlgoStudyTests;
@@ -199,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5DF6B524C9125F004424EB /* LinkedLists.swift in Sources */,
 				FF5DF6B124C90DCF004424EB /* ArraysStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,7 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF40570E24C8A7AA00C89BBE /* AlgoStudyTests.swift in Sources */,
+				FF5DF6B324C91202004424EB /* LinkedLists.swift in Sources */,
+				FF40570E24C8A7AA00C89BBE /* ArraysStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

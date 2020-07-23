@@ -1,7 +1,7 @@
 import XCTest
 @testable import AlgoStudy
 
-class AlgoStudyTests: XCTestCase {
+class ArraysStringsTests: XCTestCase {
 
     /*
      1.1 - Is Unique
