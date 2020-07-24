@@ -13,6 +13,8 @@
 		FF5DF6B124C90DCF004424EB /* ArraysStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF6B024C90DCF004424EB /* ArraysStrings.swift */; };
 		FF5DF6B324C91202004424EB /* LinkedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF6B224C91202004424EB /* LinkedLists.swift */; };
 		FF5DF6B524C9125F004424EB /* LinkedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF6B424C9125F004424EB /* LinkedLists.swift */; };
+		FF8AFB3C24CA74A900B822C2 /* StacksQueues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AFB3B24CA74A900B822C2 /* StacksQueues.swift */; };
+		FF8AFB3E24CA74BC00B822C2 /* StacksQueues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AFB3D24CA74BC00B822C2 /* StacksQueues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		FF5DF6B024C90DCF004424EB /* ArraysStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysStrings.swift; sourceTree = "<group>"; };
 		FF5DF6B224C91202004424EB /* LinkedLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedLists.swift; sourceTree = "<group>"; };
 		FF5DF6B424C9125F004424EB /* LinkedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedLists.swift; sourceTree = "<group>"; };
+		FF8AFB3B24CA74A900B822C2 /* StacksQueues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksQueues.swift; sourceTree = "<group>"; };
+		FF8AFB3D24CA74BC00B822C2 /* StacksQueues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StacksQueues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				FF5DF6B024C90DCF004424EB /* ArraysStrings.swift */,
 				FF5DF6B424C9125F004424EB /* LinkedLists.swift */,
+				FF8AFB3B24CA74A900B822C2 /* StacksQueues.swift */,
 				FF40570224C8A7AA00C89BBE /* AlgoStudy.h */,
 				FF40570324C8A7AA00C89BBE /* Info.plist */,
 			);
@@ -90,6 +95,7 @@
 			children = (
 				FF40570D24C8A7AA00C89BBE /* ArraysStrings.swift */,
 				FF5DF6B224C91202004424EB /* LinkedLists.swift */,
+				FF8AFB3D24CA74BC00B822C2 /* StacksQueues.swift */,
 				FF40570F24C8A7AA00C89BBE /* Info.plist */,
 			);
 			path = AlgoStudyTests;
@@ -205,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8AFB3C24CA74A900B822C2 /* StacksQueues.swift in Sources */,
 				FF5DF6B524C9125F004424EB /* LinkedLists.swift in Sources */,
 				FF5DF6B124C90DCF004424EB /* ArraysStrings.swift in Sources */,
 			);
@@ -214,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8AFB3E24CA74BC00B822C2 /* StacksQueues.swift in Sources */,
 				FF5DF6B324C91202004424EB /* LinkedLists.swift in Sources */,
 				FF40570E24C8A7AA00C89BBE /* ArraysStrings.swift in Sources */,
 			);
